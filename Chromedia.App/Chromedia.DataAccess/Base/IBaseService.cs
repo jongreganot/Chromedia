@@ -2,6 +2,6 @@
 {
     public interface IBaseService<T>
     {
-        public Task<IEnumerable<T>> GetAll();
+        public Task<List<T>> GetAll();
     }
 }

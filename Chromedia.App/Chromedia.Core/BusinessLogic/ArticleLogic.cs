@@ -14,17 +14,33 @@ namespace Chromedia.Business.BusinessLogic
     public sealed class ArticleLogic : IArticleLogic
     {
         private readonly IArticleService _articleService;
+        private List<Article> CachedArticles { get; set; }
+
+        public List<Article> GetCachedArticles()
+        {
+            return CachedArticles;
+        }
+
+        public void SetCachedArticles(List<Article> articles)
+        {
+            CachedArticles = articles;
+        }
+
+        public List<Article> GetLimitArticles(int limit)
+        {
+            return CachedArticles.Take(limit).ToList();
+        }
+
         public ArticleLogic(IArticleService articleService)
         {
             _articleService = articleService;
         }
         public async Task<IEnumerable<Article>> GetAll()
         {
-            var articles = await _articleService.GetAll();
+            var articleDtos = await _articleService.GetAll();
+            var articles = Mapper.Map<Article, ArticleReadDto>(articleDtos);
 
-            var article = Mapper.Map<Article, ArticleReadDto>(articles);
-
-            return article;
+            return articles.OrderByDescending(a => a.NumberOfComments).ThenByDescending(a => a.Title);
         }
     }
 }

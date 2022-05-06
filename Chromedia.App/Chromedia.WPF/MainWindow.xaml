@@ -5,8 +5,47 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Chromedia.WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="578" Width="1110"
+        Name="ThisControl">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="900"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
+        <StackPanel Grid.Row="0" Grid.Column="0"
+                    Orientation="Horizontal">
+            <TextBox HorizontalAlignment="Left"
+                     VerticalAlignment="Center"
+                     Height="25"
+                     Width="150"
+                     x:Name="LimitText"
+                     IsEnabled="{Binding LimitEnabled, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                     Text="{Binding InputLimit, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                     PreviewTextInput="LimitText_OnPreviewTextInput"/>
+            <TextBlock
+                VerticalAlignment="Center"
+                Text="&lt;------- Please input here after data loads for about 5-8 seconds"/>
+        </StackPanel>
+        
+        <DataGrid Grid.Row="1" Grid.Column="0"
+                  Name="ArticleGrid"
+                  AutoGenerateColumns="False"
+                  ItemsSource="{Binding Articles, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Title" Width="300" Binding="{Binding Title}"/>
+                <DataGridTextColumn Header="Story Title" Width="300" Binding="{Binding StoryTitle}"/>
+                <DataGridTextColumn Header="Number Of Comments" Width="300" Binding="{Binding NumberOfComments}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBlock Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" >
+            <Run Text="Output is here: "/>
+            <LineBreak/>
+            <Run Text="{Binding OutputString, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        </TextBlock>
     </Grid>
 </Window>

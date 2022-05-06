@@ -1,19 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using Chromedia.Business.BusinessLogic.Interfaces;
-using Chromedia.WPF.Areas;
 
 namespace Chromedia.WPF
 {
@@ -22,12 +9,16 @@ namespace Chromedia.WPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow(IArticleLogic articleLogic)
+        public MainWindow()
         {
             InitializeComponent();
+        }
 
-            Task.Run(() => articleLogic.GetAll())
-                .ContinueWith(task => Console.WriteLine(task.Result));
+
+        private void LimitText_OnPreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            Regex regex = new Regex("[^0-9]+");
+            e.Handled = regex.IsMatch(e.Text);
         }
     }
 }

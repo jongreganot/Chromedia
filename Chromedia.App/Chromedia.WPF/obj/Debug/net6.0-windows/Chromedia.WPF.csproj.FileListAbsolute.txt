@@ -55,3 +55,7 @@ C:\src\Chromedia\Chromedia.App\Chromedia.WPF\obj\Debug\net6.0-windows\refint\Chr
 C:\src\Chromedia\Chromedia.App\Chromedia.WPF\obj\Debug\net6.0-windows\Chromedia.WPF.pdb
 C:\src\Chromedia\Chromedia.App\Chromedia.WPF\obj\Debug\net6.0-windows\Chromedia.WPF.genruntimeconfig.cache
 C:\src\Chromedia\Chromedia.App\Chromedia.WPF\obj\Debug\net6.0-windows\ref\Chromedia.WPF.dll
+C:\src\Chromedia\Chromedia.App\Chromedia.WPF\bin\Debug\net6.0-windows\DynamicData.dll
+C:\src\Chromedia\Chromedia.App\Chromedia.WPF\bin\Debug\net6.0-windows\ReactiveUI.dll
+C:\src\Chromedia\Chromedia.App\Chromedia.WPF\bin\Debug\net6.0-windows\Splat.dll
+C:\src\Chromedia\Chromedia.App\Chromedia.WPF\bin\Debug\net6.0-windows\System.Reactive.dll

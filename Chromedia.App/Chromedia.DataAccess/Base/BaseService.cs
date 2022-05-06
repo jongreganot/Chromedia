@@ -14,25 +14,31 @@ namespace Chromedia.DataAccess.Base
             _url = url;
         }
 
-        public async Task<IEnumerable<T>> GetAll()
+        public async Task<List<T>> GetAll()
         {
-            var content = await GetContent();
 
-            T1 jObject = JsonConvert.DeserializeObject<T1>(content);
+            T1 jObjectHeader = JsonConvert.DeserializeObject<T1>(await GetContent(1));
+            var totalPages = jObjectHeader.GetMyProperty<T1>("Total_Pages");
 
+            var allList = new List<T>();
+            for (int i = 0; i < (int)totalPages; i++)
+            {
+                var content = await GetContent(i + 1);
+                T1 jObject = JsonConvert.DeserializeObject<T1>(content);
+                var data = jObject.GetMyProperty<T1>("Data");
+                var list = Mapper.Map<T, T2>(data as IEnumerable<T2>);
 
-            var data = jObject.GetMyProperty<T1>("Data");
+                allList.AddRange(list);
+            }
 
-            var list = Mapper.Map<T, T2>(data as IEnumerable<T2>);
-
-            return (IEnumerable<T>)list;
+            return allList;
         }
 
-        private async Task<string> GetContent()
+        private async Task<string> GetContent(int pageNumber)
         {
             using var client = new HttpClient();
 
-            var msg = new HttpRequestMessage(HttpMethod.Get, _url);
+            var msg = new HttpRequestMessage(HttpMethod.Get, _url + pageNumber);
             var res = await client.SendAsync(msg);
 
             var content = await res.Content.ReadAsStringAsync();

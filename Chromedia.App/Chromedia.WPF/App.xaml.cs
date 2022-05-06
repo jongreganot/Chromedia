@@ -9,6 +9,7 @@ using Chromedia.Business.BusinessLogic;
 using Chromedia.Business.BusinessLogic.Interfaces;
 using Chromedia.DataAccess;
 using Chromedia.DataAccess.Dtos;
+using Chromedia.WPF.ViewModels;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Chromedia.WPF
@@ -27,7 +28,8 @@ namespace Chromedia.WPF
 
             ServiceProvider = collection.BuildServiceProvider();
 
-            var mainWindow = new MainWindow(ServiceProvider.GetRequiredService<IArticleLogic>());
+            var mainWindow = new MainWindow();
+            mainWindow.DataContext = new MainViewModel(ServiceProvider.GetRequiredService<IArticleLogic>());
             mainWindow.Show();
         }
     }
