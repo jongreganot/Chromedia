@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\src\\Chromedia.App\\Chromedia.DataAccess\\Chromedia.DataAccess.csproj": {}
+    "C:\\src\\Chromedia\\Chromedia.App\\Chromedia.DataAccess\\Chromedia.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\src\\Chromedia.App\\Chromedia.DataAccess\\Chromedia.DataAccess.csproj": {
+    "C:\\src\\Chromedia\\Chromedia.App\\Chromedia.DataAccess\\Chromedia.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\src\\Chromedia.App\\Chromedia.DataAccess\\Chromedia.DataAccess.csproj",
+        "projectUniqueName": "C:\\src\\Chromedia\\Chromedia.App\\Chromedia.DataAccess\\Chromedia.DataAccess.csproj",
         "projectName": "Chromedia.DataAccess",
-        "projectPath": "C:\\src\\Chromedia.App\\Chromedia.DataAccess\\Chromedia.DataAccess.csproj",
+        "projectPath": "C:\\src\\Chromedia\\Chromedia.App\\Chromedia.DataAccess\\Chromedia.DataAccess.csproj",
         "packagesPath": "C:\\Users\\Jong\\.nuget\\packages\\",
-        "outputPath": "C:\\src\\Chromedia.App\\Chromedia.DataAccess\\obj\\",
+        "outputPath": "C:\\src\\Chromedia\\Chromedia.App\\Chromedia.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

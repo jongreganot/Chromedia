@@ -1,4 +1,7 @@
-﻿namespace Chromedia.DataAccess.Base
+﻿using Chromedia.DataAccess.JsonModels;
+using Newtonsoft.Json;
+
+namespace Chromedia.DataAccess.Base
 {
     public class BaseService<T> : IBaseService<T>
     {
@@ -8,9 +11,13 @@
             _url = url;
         }
 
-        public Task<string> GetAll()
+        public async Task<string> GetAll()
         {
-            return GetContent();
+            var content = await GetContent();
+
+            ArticlePage jObject = JsonConvert.DeserializeObject<ArticlePage>(content);
+
+            return jObject.ToString();
         }
 
         private async Task<string> GetContent()

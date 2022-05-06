@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "fF+17D/FGmpmShtkttaxq7pgczvAKpMoyPeU/MoWmkdRwzD1x5CSARBHTfrbXVhSGyqwv7P3cjG8m3s8dz/jNg==",
+  "dgSpecHash": "2C7ysgdJ6YTAWwJ8mwwAnze//qRbtKm9dcPsL3CHfdneufN3KFBTMQx7s50BZlJJBHgK+GWkEIHpDpwqDZyOfA==",
   "success": true,
-  "projectFilePath": "C:\\src\\Chromedia.App\\Chromedia.Core\\Chromedia.Business.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\src\\Chromedia\\Chromedia.App\\Chromedia.Core\\Chromedia.Business.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jong\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

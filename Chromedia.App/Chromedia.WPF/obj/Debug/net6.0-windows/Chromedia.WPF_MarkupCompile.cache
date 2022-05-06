@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\src\Chromedia.App\Chromedia.WPF\obj\Debug\net6.0-windows\
+C:\src\Chromedia\Chromedia.App\Chromedia.WPF\obj\Debug\net6.0-windows\
 Chromedia.WPF
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\src\Chromedia.App\Chromedia.WPF\App.xaml
+C:\src\Chromedia\Chromedia.App\Chromedia.WPF\App.xaml
 11407045341
 
 5636461432
-1982093581927
+199468168856
 MainWindow.xaml;
 
 False

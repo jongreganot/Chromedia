@@ -10,3 +10,15 @@ C:\src\Chromedia.App\Chromedia.DataAccess\obj\Debug\net6.0\Chromedia.DataAccess.
 C:\src\Chromedia.App\Chromedia.DataAccess\obj\Debug\net6.0\refint\Chromedia.DataAccess.dll
 C:\src\Chromedia.App\Chromedia.DataAccess\obj\Debug\net6.0\Chromedia.DataAccess.pdb
 C:\src\Chromedia.App\Chromedia.DataAccess\obj\Debug\net6.0\ref\Chromedia.DataAccess.dll
+C:\src\Chromedia\Chromedia.App\Chromedia.DataAccess\bin\Debug\net6.0\Chromedia.DataAccess.deps.json
+C:\src\Chromedia\Chromedia.App\Chromedia.DataAccess\bin\Debug\net6.0\Chromedia.DataAccess.dll
+C:\src\Chromedia\Chromedia.App\Chromedia.DataAccess\bin\Debug\net6.0\Chromedia.DataAccess.pdb
+C:\src\Chromedia\Chromedia.App\Chromedia.DataAccess\obj\Debug\net6.0\Chromedia.DataAccess.csproj.AssemblyReference.cache
+C:\src\Chromedia\Chromedia.App\Chromedia.DataAccess\obj\Debug\net6.0\Chromedia.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\src\Chromedia\Chromedia.App\Chromedia.DataAccess\obj\Debug\net6.0\Chromedia.DataAccess.AssemblyInfoInputs.cache
+C:\src\Chromedia\Chromedia.App\Chromedia.DataAccess\obj\Debug\net6.0\Chromedia.DataAccess.AssemblyInfo.cs
+C:\src\Chromedia\Chromedia.App\Chromedia.DataAccess\obj\Debug\net6.0\Chromedia.DataAccess.csproj.CoreCompileInputs.cache
+C:\src\Chromedia\Chromedia.App\Chromedia.DataAccess\obj\Debug\net6.0\Chromedia.DataAccess.dll
+C:\src\Chromedia\Chromedia.App\Chromedia.DataAccess\obj\Debug\net6.0\refint\Chromedia.DataAccess.dll
+C:\src\Chromedia\Chromedia.App\Chromedia.DataAccess\obj\Debug\net6.0\Chromedia.DataAccess.pdb
+C:\src\Chromedia\Chromedia.App\Chromedia.DataAccess\obj\Debug\net6.0\ref\Chromedia.DataAccess.dll

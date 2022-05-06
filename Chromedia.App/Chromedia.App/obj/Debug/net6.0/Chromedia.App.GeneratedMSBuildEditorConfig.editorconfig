@@ -7,4 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Chromedia.App
-build_property.ProjectDir = C:\src\Chromedia.App\Chromedia.App\
+build_property.ProjectDir = C:\src\Chromedia\Chromedia.App\Chromedia.App\
