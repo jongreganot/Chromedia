@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Chromedia.Business/1.0.0": {
+        "dependencies": {
+          "Chromedia.DataAccess": "1.0.0"
+        },
+        "runtime": {
+          "Chromedia.Business.dll": {}
+        }
+      },
+      "Chromedia.DataAccess/1.0.0": {
+        "runtime": {
+          "Chromedia.DataAccess.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Chromedia.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Chromedia.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

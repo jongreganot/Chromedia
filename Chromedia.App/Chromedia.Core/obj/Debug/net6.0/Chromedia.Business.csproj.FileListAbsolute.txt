@@ -1,0 +1,15 @@
+C:\src\Chromedia.App\Chromedia.Core\bin\Debug\net6.0\Chromedia.Business.deps.json
+C:\src\Chromedia.App\Chromedia.Core\bin\Debug\net6.0\Chromedia.Business.dll
+C:\src\Chromedia.App\Chromedia.Core\bin\Debug\net6.0\Chromedia.Business.pdb
+C:\src\Chromedia.App\Chromedia.Core\obj\Debug\net6.0\Chromedia.Business.csproj.AssemblyReference.cache
+C:\src\Chromedia.App\Chromedia.Core\obj\Debug\net6.0\Chromedia.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\src\Chromedia.App\Chromedia.Core\obj\Debug\net6.0\Chromedia.Business.AssemblyInfoInputs.cache
+C:\src\Chromedia.App\Chromedia.Core\obj\Debug\net6.0\Chromedia.Business.AssemblyInfo.cs
+C:\src\Chromedia.App\Chromedia.Core\obj\Debug\net6.0\Chromedia.Business.csproj.CoreCompileInputs.cache
+C:\src\Chromedia.App\Chromedia.Core\obj\Debug\net6.0\Chromedia.Business.dll
+C:\src\Chromedia.App\Chromedia.Core\obj\Debug\net6.0\refint\Chromedia.Business.dll
+C:\src\Chromedia.App\Chromedia.Core\obj\Debug\net6.0\Chromedia.Business.pdb
+C:\src\Chromedia.App\Chromedia.Core\obj\Debug\net6.0\ref\Chromedia.Business.dll
+C:\src\Chromedia.App\Chromedia.Core\bin\Debug\net6.0\Chromedia.DataAccess.dll
+C:\src\Chromedia.App\Chromedia.Core\bin\Debug\net6.0\Chromedia.DataAccess.pdb
+C:\src\Chromedia.App\Chromedia.Core\obj\Debug\net6.0\Chromedia.Business.csproj.CopyComplete
