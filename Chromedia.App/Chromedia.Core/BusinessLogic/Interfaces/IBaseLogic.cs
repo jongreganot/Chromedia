@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Chromedia.Business.BusinessLogic.Interfaces
 {
-    public interface IBaseLogic<out T> where T : class
+    public interface IBaseLogic<T> where T : class
     {
-        public Task<string> GetAll();
+        public Task<IEnumerable<T>> GetAll();
     }
 }

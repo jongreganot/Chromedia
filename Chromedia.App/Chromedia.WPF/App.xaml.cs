@@ -22,7 +22,7 @@ namespace Chromedia.WPF
         protected override void OnStartup(StartupEventArgs e)
         {
             var collection = new ServiceCollection();
-            collection.AddTransient<IArticleService, ArticleService<ArticleReadDto>>();
+            collection.AddTransient<IArticleService, ArticleService>();
             collection.AddTransient<IArticleLogic>(provider => new ArticleLogic(provider.GetRequiredService<IArticleService>()));
 
             ServiceProvider = collection.BuildServiceProvider();

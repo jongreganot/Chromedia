@@ -1,18 +1,14 @@
 ﻿using Chromedia.DataAccess.Base;
+using Chromedia.DataAccess.Dtos;
 
 namespace Chromedia.DataAccess
 {
-    public sealed class ArticleService<ArticleReadDto> : BaseService<ArticleReadDto>, IArticleService
+    public sealed class ArticleService : BaseService<ArticleReadDto>, IArticleService
     {
         public ArticleService() :
             base("https://jsonmock.hackerrank.com/api/articles?page=")
         {
             
-        }
-
-        public async Task<string> GetAll()
-        {
-            return await base.GetAll();
         }
     }
 }

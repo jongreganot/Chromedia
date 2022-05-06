@@ -13,8 +13,8 @@ namespace Chromedia.DataAccess.JsonModels
         public string Author { get; set; }
         public int? Num_Comments { get; set; }
         public int? Story_Id { get; set; }
-        public string? Story_Title { get; set; }
-        public string? Story_Url { get; set; }
+        public string Story_Title { get; set; }
+        public string Story_Url { get; set; }
         public int? Parent_Id { get; set; }
         public string Created_At { get; set; }
     }

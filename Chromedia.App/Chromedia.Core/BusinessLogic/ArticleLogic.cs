@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Chromedia.Business.BusinessLogic.Interfaces;
 using Chromedia.Business.Models;
+using Chromedia.Business.Utilities;
 using Chromedia.DataAccess;
 using Chromedia.DataAccess.Dtos;
 
@@ -12,15 +13,18 @@ namespace Chromedia.Business.BusinessLogic
 {
     public sealed class ArticleLogic : IArticleLogic
     {
-        private readonly ArticleService<ArticleReadDto> _articleService;
+        private readonly IArticleService _articleService;
         public ArticleLogic(IArticleService articleService)
         {
-            _articleService = (ArticleService<ArticleReadDto>?)articleService;
+            _articleService = articleService;
         }
-        public async Task<string> GetAll()
+        public async Task<IEnumerable<Article>> GetAll()
         {
             var articles = await _articleService.GetAll();
-            return articles;
+
+            var article = Mapper.Map<Article, ArticleReadDto>(articles);
+
+            return article;
         }
     }
 }

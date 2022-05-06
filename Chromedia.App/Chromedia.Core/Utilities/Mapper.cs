@@ -6,11 +6,11 @@ using Chromedia.DataAccess.Dtos;
 
 namespace Chromedia.Business.Utilities
 {
-    public static class Mapper<T1, T2> where T1 : Article
+    public static class Mapper
     {
-        public static IEnumerable<T1> Map(IEnumerable<T1> tList1, IEnumerable<T2> tList2)
+        public static IEnumerable<T1> Map<T1, T2>(IEnumerable<T2> tList2)
         {
-            if (tList1.GetType() == typeof(Article) && tList2.GetType() == typeof(ArticleReadDto))
+            if (typeof(T1) == typeof(Article) && typeof(T2) == typeof(ArticleReadDto))
             {
                 var returnList = new List<Article>();
                 foreach (var t2 in tList2 as IEnumerable<ArticleReadDto>)
@@ -34,7 +34,7 @@ namespace Chromedia.Business.Utilities
                 return returnList as IEnumerable<T1>;
             }
 
-            return tList1;
+            throw new NotImplementedException();
         }
     }
 }
